@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>
+ test sign up form
+ </title>
+<script src="i.js">
+</script>
+ <style>
+ .hide
+ {
+ position:absolute;
+ left:-10000px;
+ top:auto;
+ width:1px;
+ height:1px;
+ overflow:hidden;
+ }
+ </style>
+
+</head>
+
+
+
+<body onload="startTime()">
+
+ <table role=presentation width=66%>
+ <tr> <td>
+ <h1><div id="demo"> </div> </h1>
+ </td> </tr>
+ <tr> <td>
+ <h2> <div id="txt" aria-live="polite"></div> </h2>
+ </td> </tr>
+ </table>
+
+
+ <form name="myForm" >
+ <fieldset>
+ <legend class=hide> sign-up user </legend>
+
+
+ <label for="sirName"> Title</label> </legend>
+ <select id="sirName">
+ <option value="1"> Please select an option </option>
+ <option value="2"> Mr. </option>
+ <option value="3"> Ms. </option>
+ <option> Dr. </options>
+ </select>
+
+ <label for="firstName"> First name </label>
+ <input type="text" ID="firstName" aria-required="true"­ maxlength=20 > <br>
+
+ <label for="lastName"> Last name </label>
+ <input type="text" id="lastName">
+ <br>
+ <label for="company"> Company </label>
+ <input type="text" id="company" aria-required=true>
+ <br>
+ <label for="CellNum"> Cell number </label>
+ <input type="text" id="CellNum" maxlength=10 onblur="checkNum()" aria-label="Cell number, maximum 10 digits"> <br>
+ <label for="email"> E-mail </label>
+ <input type="email" id="email" aria-required=true onblur="validateEmai­l()" placeholder="me@exam­ple.com"> <br>
+
+ <input type=submit value="submit" onClick=startTime()>
+ <input type=reset value="reset" >
+ </fieldset>
+
+
+ </form>
+
+
+
+
+</body>
+</html>
+
+
