@@ -9,7 +9,7 @@ m = checkTime(m);
  s = checkTime(s);
 
  document.getElementById('txt').innerHTML ="Current time is: " + h+":"+m+":"+s;
- var t = setTimeout(function(){startTime()},500);
+ var t = setTimeout(function(){startTime()},10);
  }
 
  function checkTime(i) {
