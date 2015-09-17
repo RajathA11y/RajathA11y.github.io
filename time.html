@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>
+current time
+ </title>
+<script src="time.js">
+</script>
+ <style>
+ .hide
+ {
+ position:absolute;
+ left:-10000px;
+ top:auto;
+ width:1px;
+ height:1px;
+ overflow:hidden;
+ }
+ </style>
+
+</head>
+
+
+
+<body onload="startTime()">
+
+ <table role=presentation width=66%>
+ <tr> <td>
+ <h1><div id="demo"> </div> </h1>
+ </td> </tr>
+ <tr> <td>
+ <h2> <div id="txt" aria-live="polite"></div> </h2>
+ </td> </tr>
+ </table>
+
+</body>
+</html>
