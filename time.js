@@ -12,7 +12,8 @@ m = checkTime(m);
  var t = setTimeout(function(){startTime()},10);
  }
 
- function checkTime(i) {
+
+ function 	checkTime(i) {
  if (i<10) {i = "0" + i}; // add zero in front of numbers < 10
  return i;
  }
