@@ -4,6 +4,7 @@
  <title>
  test sign up form
  </title>
+<link rel="stylesheet" type="text/css" href="format.css">
 <script src="i.js">
 </script>
  <style>
@@ -38,7 +39,7 @@
  <fieldset>
  <legend class=hide> sign-up user </legend>
 
-
+<div id=surName>
  <label for="sirName"> Title</label> </legend>
  <select id="sirName">
  <option value="1"> Please select an option </option>
@@ -46,23 +47,35 @@
  <option value="3"> Ms. </option>
  <option> Dr. </options>
  </select>
+</div>
 
+<div id=fName>
  <label for="firstName"> First name </label>
  <input type="text" ID="firstName" aria-required="true"­ maxlength=20 > <br>
+</div>
 
+<div id=lName>
  <label for="lastName"> Last name </label>
  <input type="text" id="lastName">
+<div>
  <br>
+<div id="cp>
  <label for="company"> Company </label>
  <input type="text" id="company" aria-required=true>
+</div>
  <br>
+<div id=cellNoNo>
  <label for="CellNum"> Cell number </label>
  <input type="text" id="CellNum" maxlength=10 onblur="checkNum()" aria-label="Cell number, maximum 10 digits"> <br>
+</div>
+<div id=e--mail>
  <label for="email"> E-mail </label>
  <input type="email" id="email" aria-required=true onblur="validateEmai­l()" placeholder="me@exam­ple.com"> <br>
-
+</div>
+<div id=submitForm>
  <input type=submit value="submit" onClick=fun()>
  <input type=reset value="reset" >
+</div>
  </fieldset>
 
 
@@ -151,8 +164,13 @@ alert(" cell number cannot be left blank")
 
 </script>
 
+<br>
+
+ <footer role="contentinfo"> 
+     <p>© Rajath tirumangalam
+</p>
+</footer>
+
 
 </body>
 </html>
-
-

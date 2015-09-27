@@ -1,8 +1,9 @@
 <html>
 <head>
 <title>
-login
+login form example
 </title>
+<link rel="stylesheet" type="text/css" href="format.css" >
 <script>
 function fun()
 {
@@ -33,9 +34,27 @@ frmLogin.pwd.focus()
 
 <h1 id=main> login form </h1>
 <form name=frmLogin>
+<div id=user_name>
 <label for="uID"> user name: </label>
 <input type="text" id="uID">
+</div>
+<div id="password_entry">
 <label for="pwd"> Password: </label>
 <input type="password" id="pwd">
+</div>
+<div id="submit_login">
 <input type=submit value="Login" onclick='fun()'>
 <input type=reset>
+</div>
+
+</form>
+<br>
+
+ <footer role="contentinfo"> 
+     <p>© Rajath tirumangalam
+</p>
+</footer>
+
+
+</body>
+</html>
