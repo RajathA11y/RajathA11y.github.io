@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>
+login form example
+</title>
+<link rel="stylesheet" type="text/css" href="format.css" >
+<script>
+function fun()
+{
+temp = document.frmLogin.uID.value
+
+if( temp == "")
+{
+alert (" username cannot be left blank")
+document.getElementById("uID").focus()
+}else if (document.frmLogin.pwd.value =="")
+{
+alert("password cannot be left blank")
+frmLogin.pwd.focus()
+}
+
+}
+</script>
+</head>
+<body>
+  <a href="#main">Skip to main content</a>
+  <nav role='navigation'>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="/blog"> References</a></li>
+    </ul>
+  </nav>
+
+<h1 id=main> login form </h1>
+<form name=frmLogin>
+<div id=user_name>
+<label for="uID"> user name: </label>
+<input type="text" id="uID">
+</div>
+<div id="password_entry">
+<label for="pwd"> Password: </label>
+<input type="password" id="pwd">
+</div>
+<div id="submit_login">
+<input type=submit value="Login" onclick='fun()'>
+<input type=reset>
+</div>
+
+</form>
+<br>
+
+ <footer role="contentinfo"> 
+     <p>© Rajath tirumangalam
+</p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>
+ test sign up form
+ </title>
+<link rel="stylesheet" type="text/css" href="format.css">
+<script src="i.js">
+</script>
+ <style>
+ .hide
+ {
+ position:absolute;
+ left:-10000px;
+ top:auto;
+ width:1px;
+ height:1px;
+ overflow:hidden;
+ }
+ </style>
+
+</head>
+
+
+
+<body onload="startTime()">
+  <a href="#main">Skip to main content</a>
+  <nav role='navigation'>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="/blog"> References</a></li>
+    </ul>
+  </nav>
+<h1 id=main> registration form </h1>
+
+
+ <form name="myForm" >
+ <fieldset>
+ <legend class=hide> sign-up user </legend>
+
+<div id=surName>
+ <label for="sirName"> Title</label> </legend>
+ <select id="sirName">
+ <option value="1"> Please select an option </option>
+ <option value="2"> Mr. </option>
+ <option value="3"> Ms. </option>
+ <option> Dr. </options>
+ </select>
+</div>
+
+<div id=fName>
+ <label for="firstName"> First name </label>
+ <input type="text" ID="firstName" aria-required="true"­ maxlength=20 > <br>
+</div>
+
+<div id=lName>
+ <label for="lastName"> Last name </label>
+ <input type="text" id="lastName">
+<div>
+ <br>
+<div id="cp>
+ <label for="company"> Company </label>
+ <input type="text" id="company" aria-required=true>
+</div>
+ <br>
+<div id=cellNoNo>
+ <label for="CellNum"> Cell number </label>
+ <input type="text" id="CellNum" maxlength=10 onblur="checkNum()" aria-label="Cell number, maximum 10 digits"> <br>
+</div>
+<div id=e--mail>
+ <label for="email"> E-mail </label>
+ <input type="email" id="email" aria-required=true onblur="validateEmai­l()" placeholder="me@exam­ple.com"> <br>
+</div>
+<div id=submitForm>
+ <input type=submit value="submit" onClick=fun()>
+ <input type=reset value="reset" >
+</div>
+ </fieldset>
+
+
+ </form>
+
+<script>
+ function startTime() {
+ var today=new Date();
+ var h=today.getHours();
+ var m=today.getMinutes();
+var s=today.getSeconds();
+m = checkTime(m);
+ s = checkTime(s);
+
+ document.getElementById('txt').innerHTML ="Current time is: " + h+":"+m+":"+s;
+ var t = setTimeout(function(){startTime()},500);
+ }
+
+ function checkTime(i) {
+ if (i<10) {i = "0" + i}; // add zero in front of numbers < 10
+ return i;
+ }
+
+
+ function fun()
+ {
+
+ var fn=myForm.firstName.value;
+ var cn = myForm.company.value;
+var mn =myForm.CellNum.value;
+ var dd =isNaN(mn);
+ var em = myForm.email.value;
+
+
+ if(myForm.sirName.value == 1)
+ {
+ document.getElementById("sirName").focus();
+alert("Please select your Title");
+
+ } else if ( fn == "")
+ {
+ alert("first name cannot be left blank");
+ myForm.firstName.focus();
+ } else if (cn == "")
+ {
+ alert("company name cannot be left blank");
+ myForm.company.focus();
+ } else if(mn== "")
+ {
+ alert(" cell number cannot be left blank");
+ myForm.CellNum.focus();
+ } 
+else if (em == "")
+ {
+ alert(" email cannot be left blank");
+ myForm.email.focus();
+ } else
+ {
+ alert(" account created");
+ document.write(" HTML error 505");
+ document.write("File not found");
+ }
+ }
+
+
+ function checkNum()
+ {
+
+ var nTest=(isNaN(myForm.CellNum.value));
+
+ if ( (nTest ==true) )
+ {
+ alert(" Cell number cannot contain letters or special symbols"); myForm.CellNum.value="";
+myForm.CellNum.focus();
+ }else if( myForm.CellNum.value == "")
+{
+myForm.CellNum.focus();
+alert(" cell number cannot be left blank")
+}
+
+ }
+ </script>
+ </body>
+ </html>
+
+
+</script>
+
+<br>
+
+ <footer role="contentinfo"> 
+     <p>© Rajath tirumangalam
+</p>
+</footer>
+
+
+</body>
+</html>

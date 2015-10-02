@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+HTML elements: button
+</title>
+<link rel="stylesheet" type="text/css" href="format.css">
+</head>
+
+<body>
+  <a href="#main">Skip to main content</a>
+  <nav role='navigation'>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="/blog"> References</a></li>
+    </ul>
+  </nav>
+
+<h1 id=main> This page contains examples of HTML buttons </h1>
+
+<h2> example of auto focus button </h2>
+
+
+<button type="button" autofocus onclick="alert('You just clicked A button with autofocus:!')">Click Me!</button>
+
+
+
+<h2> Example of a clickable button </h2>
+
+
+<button type="button" onclick="alert('This is a simple button')">Click Me!</button>
+
+<h2> disabled button </h2>
+<button type="button" disabled>Click Me!</button> 
+<h2> submit and reset button </h2>
+<button type="submit" onclick="alert('You just clicked the submit button')"> Submit</button>
+
+<button type="reset"> reset </button>
+<h2> button with image(BAD example without alt value" </h2>
+<button > <img src="test.gif"> 
+</button> 
+
+<h2> button with image ( with alt value)</h2>
+<button onclick="target=index.html"> <img src="test.gif" alt="back to home"> 
+</button> 
+
+
+
+<h2> aria roll= button </h2>
+<div role="button"  onclick="alert('hello')" tabindex=0> text button 
+</div>
+Note: used tabindex to get the tab focuss on the div text, using role=button the screen readers announces it as a button
+<br>
+<br>
+
+ <footer role="contentinfo"> 
+     <p>© Rajath tirumangalam
+</p>
+</footer>
+
+
+</body>
+</html>
