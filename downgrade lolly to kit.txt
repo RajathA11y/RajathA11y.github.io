@@ -1,0 +1,343 @@
+
+?Type the following commands:
+
+“
+fastboot flash logo logo.bin
+fastboot flash boot boot.img
+fastboot flash recovery recovery.img
+fastboot flash system system.img_sparsechunk.0
+fastboot flash system system.img_sparsechunk.1
+fastboot flash system system.img_sparsechunk.2
+fastboot flash modem NON-HLOS.bin
+fastboot erase modemst1 
+fastboot erase modemst2 
+fastboot flash fsg fsg.mbn
+fastboot erase cache 
+fastboot erase userdata
+
+fastboot reboot
+
+You should now have stock Android 4.4.4 on your phone. Please be advised that some users (including me) have experienced screen flickering after downgrade. I rebooted the phone and the flickering was gone. But your experience may vary.
+
+ 
+
+
+
+About these ads
+
+
+
+ 
+
+
+
+
+
+
+
+Related
+
+
+
+Upgrade your Motorola Moto G to Android 5.0 Lollipop
+
+In "Tutorial"
+
+
+OnePlus One: Return to Stock
+
+In "Tutorial"
+
+
+Unlock the Bootloader of Motorola Moto G
+
+In "Tutorial"
+ 
+
+Posted in Tutorial	
+
+Tagged adb, Android 4.4.4, android 5, bootloader, downgrade, FASTBOOT, moto g, motorola, Motorola Moto G	
+
+
+Jan
+
+03
+  
+
+7 thoughts on “Downgrade Motorola Moto G to Android 4.4.4 from Android 5.0” 
+
+
+
+	karthick 
+ 
+—  February 11, 2015 at 06:09  
+ 
+
+Good to know the procedure..
+
+Reply	
+  
+ 
+
+
+	Asad Iqbal 
+ 
+—  February 18, 2015 at 10:15  
+ 
+
+Salam, Mr. Hafiz, my problem is that I was playing a game at my Moto G XT1033 (v5.0.1). Then suddenly the screen got stuck, i turned it off then when I turned it on, it got stuck on Logo screen. Since, I didn’t liked lollipop so then I tried to downgrade to 4.4.4. For that. I followed your procedure word to word, but, in the end I am still STUCKED on the “M” logo of lollipop (it seems that it didn’t downgraded though)…… sometime, I’m stuck on “WARNING BOOTLOADER UNLOCKED” screen……………….I already made my backup before…… PLZZZZ, help me, Tell me what to do…….. If u live in UAE, mention it……
+
+Reply	
+  
+
+
+	hafizimtiaz 
+ 
+—  February 18, 2015 at 16:44  
+ 
+
+The main reasons for being stuck at boot logo are: wrong kernel, partition mismatch. You should try flashing the Lollipop build again to see if the problem persists.
+
+Reply	
+  
+
+
+	Raghavendar 
+ 
+—  May 18, 2015 at 07:06  
+ 
+
+You may have to factory reset the smartphone. I myself faced this same issue where the phone got stuck in blue logo screen. Some times wiping the partition cache may solve the issue or else factory reset in the only option. Try the steps in the following link to clear the cache/factory reset.
+
+Moto E/Moto G/Moto X – Stuck in Circle Blue M Screen – Solved
+http://teknosrc.com/moto-e-moto-g-moto-x-stuck-circle-blue-m-screen-how-to-solved/
+
+
+  
+  
+  
+ 
+
+
+	Asad Iqbal 
+ 
+—  February 19, 2015 at 11:58  
+ 
+
+Can you plz tell me what to do now……. because I followed your procedure since the beginning …… Tell me all the steps of what to do……. I shall be thankful…….. mine is XT1033………. PLZ HELP ME……. I’m badly stuck….
+
+Reply	
+  
+ 
+
+
+	Asad Iqbal 
+ 
+—  February 19, 2015 at 12:02  
+ 
+
+I don’t know anything about kernels, partition mismatch or flashing,,,,,,,,,,,,,,,,,,,,,,just tell me the steps, i’ll follow them word to word…..
+
+Reply	
+  
+
+
+	praneeth 
+ 
+—  August 2, 2015 at 00:32  
+ 
+
+sir have u got any solution for it if so please reply
+
+Reply	
+  
+  
+ 
+
+Leave a Reply 
+
+  
+
+Enter your comment here...Enter your comment here...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gravatar
+
+
+
+
+
+
+
+
+
+
+
+
+
+WordPress.com Logo
+
+
+
+
+
+
+Twitter picture
+
+
+
+
+
+
+Facebook photo
+
+
+
+
+
+
+Google+ photo
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+
+Post navigation
+
+? Upgrade your Motorola Moto G to Android 5.0 Lollipop
+
+OnePlus One: Return to Stock ?
+   
+
+
+Categories
+?Linux Tutorial (7) 
+?Miscellaneous (4) 
+?Tutorial (22) 
+
+
+My Tweets
+
+Error: Twitter did not respond. Please wait a few minutes and refresh this page.
+
+
+Recent Posts
+? How to Run Batch Operation on Cluster Computer 
+? OnePlus One: Return to Stock 
+? Downgrade Motorola Moto G to Android 4.4.4 from Android 5.0 
+? Upgrade your Motorola Moto G to Android 5.0 Lollipop 
+? Unlock the Bootloader of Motorola Moto G 
+
+
+Tags
+
+4.4.2 64 bit adb android Android 4.4.4 android 5 at&t belle bootloader calendar contacts crysis custom kernel custom rom Developer Edition downgrade FASTBOOT firmware flashing fp1 fp2 galaxy s gmail google Google Play Edition GPE GPRS modem hboot home networking HTC htc one htc sense ics internet internet connection itunes k550i kernel changing LAN latex linux m7 matlab Minimal Fastboot mini pro moto g motorola Motorola Moto G nature ui nokia 700 opencv OTA ota update pop proxy proxy server return to stock root s-off samsung server kernel SMP smtp sony ericsson squid Squid proxy synaptic Synaptic Package Manager theme ubuntu unlock w610 windows xperia yahoo mail
+
+
+Posts by Date
+
+
+January 2015
+
+
+M
+
+T
+
+W
+
+T
+
+F
+
+S
+
+S
+
+
+« Dec     
+
+  1 2 3 4 
+5 6 7 8 9 10 11 
+12 13 14 15 16 17 18 
+19 20 21 22 23 24 25 
+26 27 28 29 30 31   
+
+
+RSS Links
+?RSS - Posts
+
+
+Email Subscription
+
+
+Enter your email address to subscribe to this blog and receive notifications of new posts by email.
+
+Join 189 other followers
+
+
+
+     	 
+  
+
+Blog at WordPress.com.  |  The Reddle Theme. 
+       
+
+
+
+
+
+
+
+
+
+
+  
+
+?Follow
+
+
+Follow “Hafiz Imtiaz's Blog”
+
+
+Get every new post delivered to your Inbox.
+
+
+Join 189 other followers
+
+
+     
+
+
+Build a website with WordPress.co
