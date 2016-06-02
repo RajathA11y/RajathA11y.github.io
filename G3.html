@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>
+			Guideline 1.3 Adaptable
+		</title>
+	</head>
+
+	<body>
+<h1> Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure </h1>
+
+<h2> Purpose </h2>
+<p>
+To ensure that all information is available in a form that can be perceived by all users, for example, spoken aloud, or presented in a simpler visual layout. 
+</p>
+
+<h3>
+1.3.1 Info and Relationships I.E., Semantic markup is used to designate headings, lists (up, ol, and dl), emphasized or special text (strong, code, abbr,
+blockquote </h3>
+
+
+<h4> Test Procedure for Headings </h4>
+
+<table>						
+<tr> <th>	Screen Reader	</th> <th>	Test Procedure 	</th> <th>	Expected result:	</th> </tr>
+<tr> <td>	JAWS	</td> <td>	Use the keystroke “Insert + F6” which displays all the headings on the page in a list; 	</td> <td>	ensure headings displayed in list view are matching the visual heading sequence; Verify that the headings are meaningful; JAWS should be able to detect headings 	</td> </tr>
+<tr> <td>	NVDA	</td> <td>	Use keystroke Ins + f7 , use shift tab and select Headings from the category	</td> <td>	ensure headings displayed in list view are matching the visual heading sequence; Verify that the headings are meaningful; NVDA should be able to detect headings 	</td> </tr>
+<tr> <td>	VoiceOver	</td> <td>	Press ctrl + options + u to open the rotor,, press the left or right arrow keys to cycle through the list of options until you find headings list	</td> <td>	ensure headings displayed in list view are matching the visual heading sequence; Verify that the headings are meaningful; VoiceOver should be able to detect headings 	</td> </tr>
+<tr> <td>	Talkback	</td> <td>	On the webpage swipe down with three fingers until it announces headings list, Now swipe three fingers left to right for next heading and right to left for previous heading 	</td> <td>	Verify that the headings are meaningful; Talkback should be able to detect headings 	</td> </tr>
+</table>						
+
+
+
+
+
+
+
+<h4> Test Procedure for Tables </h4>
+
+<table>						
+<tr> <th>	Screen Reader	</th> <th>	Test Procedure 	</th> <th>	Expected result:	</th> </tr>
+<tr> <td>	JAWS	</td> <td>	USE the JAWS shortcut “T” to navigate to a table, Use the keystroke “Ctrl + Alt + arrow keys to move between the cells; Alternatively you can use insert + spacebar followed by t and use arrow keys	</td> <td>	Verify that jaws announces the column and row headings where ever applicable 	</td> </tr>
+<tr> <td>	NVDA	</td> <td>	USE the NVDA shortcut “T” to navigate to a table, Use the keystroke “Ctrl + Alt + arrow keys	</td> <td>	Verify that NVDA announces the column and row headings where ever applicable 	</td> </tr>
+<tr> <td>	VoiceOver	</td> <td>	Press ctrl + options + command + t for next table, Press ctrl + options + command + y for next column, Press ctrl + options + command + shift + y for previous column, Press ctrl + options + c to read the column heading, Press ctrl + arrow keys to navigate the rows and columns 	</td> <td>	Verify that VoiceOver announces the column and row headings where ever applicable 	</td> </tr>
+</table>						
+
+<h3> 1.3.2 Meaningful Sequence </h3>
+
+<table>						
+<tr> <th>	Screen Reader	</th> <th>	Test Procedure 	</th> <th>	Expected result:	</th> </tr>
+<tr> <td>	JAWS	</td> <td>	Use “Insert + down arrow” to make JAWS read the entire page	</td> <td>	Verify that the visual order and screen reader reading order are same 	</td> </tr>
+<tr> <td>	NVDA	</td> <td>	Use “Insert + down arrow” to make NVDA read the entire page	</td> <td>	Verify that the visual order and screen reader reading order are same 	</td> </tr>
+<tr> <td>	VoiceOver	</td> <td>	Use Control + Option + A to make VoiceOver read the entire page	</td> <td>	Verify that the visual order and screen reader reading order are same 	</td> </tr>
+<tr> <td>	Talkback	</td> <td>	Draw the letter ‘l’ on the screen, in the screen select the option “read from next item” 	</td> <td>	Verify that the visual order and screen reader reading order are same 	</td> </tr>
+</table>						
+
+<h3> 1.3.3 Sensory Characteristics  </h3>
+
+<p> Instructions do not rely upon shape, size, or visual location For example: </p>
+<ul>
+
+<li> Click the square icon to continue </li>
+<li> Instructions are in the right-hand column </li>
+<li> A beeping sound indicates you may continue </li>
+</ul>
+
+ 
+<h4> Test Procedure </h4>
+<p> No specific screen reader commands available, perform a Manual check to ensure the instructions are not relying upon shape, size, visual location, or sound </p>
+
+	</body>
+</html>
