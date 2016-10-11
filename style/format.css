@@ -37,3 +37,8 @@ body {
 	float: left;
 	padding: 0 2px 3px 0;
 }
+
+IMG.displayed {
+    display: block;
+    margin-left: 25%;
+    margin-right: 33% }
