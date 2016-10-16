@@ -1,0 +1,22 @@
+<script javascript>
+ function hourChange(selectObj) {
+   var selectIndex=selectObj.selectedIndex;
+   var selectValue=selectObj.options[selectIndex].text;
+   var output=document.getElementById("output");
+   //alert(output.innerText);
+   output.innerHTML=selectValue;
+ }
+
+</script>
+
+<select id="hour" onchange="hourChange(this);">
+
+  <option>1</option>
+  <option>2</option>
+
+</select>
+
+<p/>
+
+<div aria-live="polite">you selected: <span id="output" aria-live="polite"> </span>
+</div>
