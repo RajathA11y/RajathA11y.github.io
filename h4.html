@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>
+			H4: Creating a logical tab order through links, form controls, and objects | Techniques for WCAG 2.0 
+		</title>
+	</head>
+
+	<body>
+  <a href="#main" tabindex="1">Skip to main content</a>
+  <nav role="navigation" aria-labelledby="navigation">
+    <ul>
+      <li>Home</li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="feedback.html"> Feedback</a></li>
+    </ul>
+  </nav>
+<div role=main>
+
+		<h1 id=main>  
+				H4: Creating a logical tab order through links, form controls, and objects | Techniques for WCAG 2.0
+				</h1>
+			<h2> Success Criterion 2.4.3 (Focus Order) </h2>
+<h3> Example 1 : marriage search record </h3>
+
+<p> A genealogical search form searches for marriage records. The search form includes several input fields for the bride and the groom. The form is marked
+up using a data table that includes the fields of the groom in the first column and the fields of the bride in the second column. The order in the content
+is row by row but the author feels it is more logical to navigate the form column by column. This way, all the groom's criteria can be filled in before
+moving on to the bride's criteria. The tabindex attributes of the input fields are used to specify a tab order that navigates column by column.
+</p>
+
+<form action="#" method="post">
+ <table summary="the first column contains the search criteria 
+  of the groom, the second column the search criteria of 
+  of the bride">
+ <caption>Search for marriage records</caption>
+ <tr>
+   <th>Search criteria</th>
+   <th>Groom</th>
+   <th>Bride</th>
+ </tr>
+ <tr>
+  <th>First name</th>
+  <td><input type="text" size="30" value="" name="groomfirst" 
+      title="First name of the groom" tabindex="2"></td>
+  <td><input type="text" size="30" value="" name="bridefirst" 
+       title="First name of the bride" tabindex="5"></td>
+ </tr>
+ <tr>
+  <th>Last name</th>
+  <td><input type="text" size="30" value="" name="groomlast" 
+      title="Last name of the groom" tabindex="3"></td>
+  <td><input type="text" size="30" value="" name="bridelast" 
+      title="Last name of the bride" tabindex="6"></td>
+ </tr>
+ <tr>
+  <th>Place of birth</th>
+  <td><input type="text" size="30" value="" name="groombirth" 
+      title="Place of birth of the groom" tabindex="4"></td>
+  <td><input type="text" size="30" value="" name="bridebirth" 
+      title="Place of birth of the bride" tabindex="7"></td>
+ </tr>
+</table>
+</form>      
+
+<h3> Example 2 </h3>
+<p>
+This  Web page contains a search field in the next section.The field is given tabindex="1" so that it will occur first in the tab order, even though
+it is not first in the content order.
+</p>
+<div role=search>
+<input type="text" aria-label="search"  tabindex=1> 
+<input type=button value=search tabindex=1>
+</div>
+<div aria-label="test ">
+<h3> 
+Tests Procedure
+</h3>
+<ol>
+<li> 
+ Check if tabindex is used
+</li>
+<li>
+If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.
+</li>
+</ol>
+
+
+<h4> Expected Results
+</h4>
+
+<ul>
+<li>
+Check #2 is true.
+</li>
+</ul>
+</div>
+
+</body>
+</html>

@@ -1,6 +1,0 @@
-new password created. 
-Personal Authentication Key: 
-Our portal is designed to enable you to submit digital signatures, using a unique authentication key. Once you log in to the portal successfully, please use the unique authentication key given below, when submitting your online forms.
-Authentication Key: 99054CFA8BD58500 
-After completing the registration process and having accepted the offer via the Onboarding portal proceed to the Pre-joining formalities. 
- 
